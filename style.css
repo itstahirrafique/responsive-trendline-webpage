@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  /* background-color: blue; */
+}
+
+.gola {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  color: grey;
+  height: 80px;
+}
+
+#nav-part1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+#nav-part2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+#nav-part2 h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#nav-part2 h4 span {
+  color: lightgrey;
+}
+
+#nav2 {
+  display: flex;
+  height: 70px;
+  gap: 80px;
+  align-items: center;
+  font-weight: 300;
+  color: gray;
+  width: 100%;
+  padding: 0 40px;
+}
+
+#nav2 h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#content {
+  height: calc(100% - 150px);
+  width: 100%w;
+}
+
+#text-content {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+  /* background-color: red;  */
+}
+
+#text-content::-webkit-scrollbar {
+  background-color: transparent;
+  height: 5px;
+}
+
+#text-content::-webkit-scrollbar-thumb {
+  background-color: orange;
+}
+
+.elem {
+  flex-shrink: 0;
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.elem h1 {
+  font-size: 110px;
+  font-weight: 300;
+}
+
+
+/*  */
+#imag-content{
+  height: 65%;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+
+#imag-content::-webkit-scrollbar{
+  display: none;
+}
+
+#imag-content img{
+  /* flex-shrink: 0; */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top;
+}
