@@ -56,6 +56,10 @@ body {
   color: lightgrey;
 }
 
+#nav h5 {
+  display: none;
+}
+
 #nav2 {
   display: flex;
   height: 70px;
@@ -79,7 +83,7 @@ body {
 }
 
 #text-content {
-  height: 45%;
+  height: 35%;
   width: 100%;
   display: flex;
   overflow-x: auto;
@@ -92,6 +96,10 @@ body {
 }
 
 #text-content::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 191, 62, 0.829);
+}
+
+#text-content::-webkit-scrollbar-thumb:hover {
   background-color: orange;
 }
 
@@ -105,27 +113,146 @@ body {
 }
 
 .elem h1 {
-  font-size: 110px;
+  font-size: 6.2vw;
   font-weight: 300;
 }
 
-
 /*  */
-#imag-content{
+#imag-content {
   height: 65%;
   width: 100%;
   display: flex;
   overflow-x: auto;
 }
 
-#imag-content::-webkit-scrollbar{
+#imag-content::-webkit-scrollbar {
   display: none;
 }
 
-#imag-content img{
-  /* flex-shrink: 0; */
+#imag-content img {
+  flex-shrink: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: top;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 600px) {
+  #nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 20px;
+    color: grey;
+    height: 60px;
+    /* background-color: red; */
+  }
+
+  #nav-part1 {
+    gap: 0px;
+  }
+
+  #nav-part2 {
+    gap: 10px;
+  }
+
+  #nav-part2 h4 {
+    font-size: 16px;
+    display: none;
+    font-weight: 600;
+  }
+  #nav-part2 h4:nth-child(1) {
+    display: initial;
+  }
+
+  #nav-part2 h4 span {
+    color: lightgrey;
+  }
+
+  #nav h5 {
+    display: initial;
+  }
+
+  #nav h5 i {
+    font-size: 20px;
+  }
+  .gola {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000;
+  }
+
+  #nav2 {
+    height: 30px;
+    gap: 10px;
+    width: 100%;
+    padding: 0 20px;
+    justify-content: space-between;
+  }
+
+  #nav2 h3 {
+    font-size: 10px;
+  }
+
+  #text-content::-webkit-scrollbar {
+    background-color: transparent;
+    height: 5px;
+  }
+
+  #text-content::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 191, 62, 0.829);
+  }
+
+  #text-content::-webkit-scrollbar-thumb:hover {
+    background-color: orange;
+  }
+
+  #content {
+    height: calc(100% - 90px);
+    width: 100%w;
+  }
+  
+  
+
+  #text-content {
+    height: 35%;
+    width: 100%;
+    display: flex;
+  }
+
+  .elem {
+    flex-shrink: 0;
+    height: 100%;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .elem h1 {
+    font-size: 6.5vw;
+    font-weight: 300;
+  }
+
+  /*  */
+  #imag-content {
+    height: 65%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+  }
+
+  #imag-content::-webkit-scrollbar {
+    display: none;
+  }
+
+  #imag-content img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
 }
